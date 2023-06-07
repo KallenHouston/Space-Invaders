@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  splatPrefab: {fileID: 3735030169686199565, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
+  splatPrefab: {fileID: 6585512514040395636, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
 --- !u!1 &459931607
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  splatPrefab: {fileID: 3735030169686199565, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
+  splatPrefab: {fileID: 6585512514040395636, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
 --- !u!1 &1262157894
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  splatPrefab: {fileID: 3735030169686199565, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
+  splatPrefab: {fileID: 6585512514040395636, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
 --- !u!1 &1518608234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  splatPrefab: {fileID: 3735030169686199565, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
+  splatPrefab: {fileID: 6585512514040395636, guid: 24e04f2c22006a6428b0eb169a2ff411, type: 3}
 --- !u!1 &1911177481
 GameObject:
   m_ObjectHideFlags: 0
