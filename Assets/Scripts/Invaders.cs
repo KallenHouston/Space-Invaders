@@ -46,9 +46,18 @@ public class Invaders : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Bullet")) 
+        if (other.gameObject.layer == LayerMask.NameToLayer("Bullet"))
         {
-            dead.Invoke();
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            if (gameManager != null)
+            {
+                gameManager.Score(10);
+            }
+
+            if (dead != null)
+            {
+                dead.Invoke();
+            }
             gameObject.SetActive(false);
         }
     }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bunkers : MonoBehaviour
@@ -7,7 +8,11 @@ public class Bunkers : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Missle") || other.gameObject.layer == LayerMask.NameToLayer("Bullet"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Missle") || other.gameObject.layer == LayerMask.NameToLayer("Bullet"))
         {
             health--;
             Vector3 impactPos = other.transform.position;

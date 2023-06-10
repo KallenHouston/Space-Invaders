@@ -14,10 +14,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (destroy != null) { 
-        destroy.Invoke();
+        if (destroy != null)
+        {
+            destroy.Invoke();
         }
-
         Destroy(gameObject);
     }
 }
+
