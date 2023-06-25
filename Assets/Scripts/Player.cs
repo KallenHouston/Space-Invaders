@@ -53,10 +53,14 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!isInvincible && (other.gameObject.layer == LayerMask.NameToLayer("Invader") ||
-                              other.gameObject.layer == LayerMask.NameToLayer("Missle")))
+        if (!isInvincible && other.gameObject.layer == LayerMask.NameToLayer("Missle"))
         {
             takeDamage();
+        }
+
+        if (!isInvincible && other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            die();
         }
     }
 
